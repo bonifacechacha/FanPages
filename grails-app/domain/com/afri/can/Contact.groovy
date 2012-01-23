@@ -7,5 +7,9 @@ class Contact {
     String fax
     
     static constraints = {
+        email(blank:false,email:true)
+        mobile(blank:false,nullable:false)
+        telephone(blank:false,nullable:false)
+        fax(blank:false,nullable:false)
     }
 }
