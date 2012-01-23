@@ -1,14 +1,11 @@
 package com.afri.can
 
-class Person {
+class Person extends Item{
     String firstname
     String lastname
     String othernames
     String gender
     Date dateOfBirth 
-    
-    Address address
-    Contact contact
     
     static constraints = {
         firstname(blank:false,nullable:false)
@@ -18,8 +15,4 @@ class Person {
         dateOfBirth(nullable:false)
     }
     
-    static mapping={
-        address lazy:true
-        contact lazy:true
-    }
 }

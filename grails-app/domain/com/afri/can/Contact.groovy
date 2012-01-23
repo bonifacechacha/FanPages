@@ -5,6 +5,8 @@ class Contact {
     String mobile
     String telephone
     String fax
+
+    static belongsTo=Item
     
     static constraints = {
         email(blank:false,email:true)

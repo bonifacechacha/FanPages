@@ -5,7 +5,7 @@ class Address {
     String city
     String location//can be longitude or latitude
     
-    static belongsTo=[Person,Contact]
+    static belongsTo=Item
 
     static constraints = {
         country(blank:false,nullable:false)

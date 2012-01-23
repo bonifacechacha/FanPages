@@ -1,7 +1,5 @@
 package com.afri.can
 
-class Celebrity {
+interface Celebrity {
 
-    static constraints = {
-    }
 }
