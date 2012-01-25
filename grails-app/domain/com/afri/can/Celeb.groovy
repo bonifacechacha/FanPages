@@ -1,5 +1,5 @@
 package com.afri.can
 
-class Celeb extends Person implements Celebrity{
+class Celeb extends Person {
         
 }
