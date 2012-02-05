@@ -5,6 +5,10 @@ class Media {
     String description
     def type
     
+    static belongsTo=Profile
+    static hasMany=[profiles:Profile]
+    
     static constraints = {
     }
+    
 }

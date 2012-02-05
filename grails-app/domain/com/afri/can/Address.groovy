@@ -1,5 +1,9 @@
 package com.afri.can
-
+/**
+ *Information about the physical location
+ *Later it should be able to show on the google maps
+ *
+*/
 class Address {
     String country
     String city

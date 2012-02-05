@@ -5,7 +5,10 @@ class Person extends Item{
     String lastname
     String othernames
     String gender
-    Date dateOfBirth 
+    Date dateOfBirth
+    
+    String username
+    String password
     
     static constraints = {
         firstname(blank:false,nullable:false)
@@ -13,6 +16,13 @@ class Person extends Item{
         othernames(blank:true,nullable:true)
         gender(nullable:false)
         dateOfBirth(nullable:false)
+        
+        password(size: 6..8,
+            validator: { passwd, person ->
+                return passwd != person.username
+            })
+        username(email:true,blank:false)
+
     }
     
 }
