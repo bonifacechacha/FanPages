@@ -15,7 +15,7 @@ class Profile {
     static constraints = {
         bio(nullable: true, maxSize: 1000)
         homepage(url: true, nullable: true)
-        email(email: true, nullable: true)
+        email(email: true, nullable: false,blank: false)
         photo(nullable: true)
     }
 

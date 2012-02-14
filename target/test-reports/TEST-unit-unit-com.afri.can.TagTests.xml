@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="boniface-HP-G60-Notebook-PC" name="com.afri.can.TagTests" tests="1" time="0.544" timestamp="2012-02-04T23:35:03">
+  <properties />
+  <testcase classname="com.afri.can.TagTests" name="testSomething" time="0.473">
+    <failure message="java.lang.AssertionError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: java.lang.AssertionError: Implement me
+	at com.afri.can.TagTests.testSomething(TagTests.groovy:15)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+  <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+</testsuite>

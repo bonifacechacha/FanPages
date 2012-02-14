@@ -1,8 +1,7 @@
 package com.afri.can
 
 class Person extends Item{
-    String firstname
-    String lastname
+    String fullname
     String othernames
     String gender
     Date dateOfBirth
@@ -11,11 +10,10 @@ class Person extends Item{
     String password
     
     static constraints = {
-        firstname(blank:false,nullable:false)
-        lastname(blank:false,nullable:false)
+        fullname(blank:false,nullable:false)
         othernames(blank:true,nullable:true)
-        gender(nullable:false)
-        dateOfBirth(nullable:false)
+        gender(nullable:true)
+        dateOfBirth(nullable:true)
         
         password(size: 6..8,
             validator: { passwd, person ->
